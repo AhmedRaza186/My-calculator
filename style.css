@@ -61,9 +61,7 @@ button:active {
   background: rgba(255,255,255,0.1);
   transition: 0.1s;
 }
-button:active{
-    transform: scale(0.9);
-}
+
 .equal-button{
     background-color: #fb7c14;
     color: #fff;
