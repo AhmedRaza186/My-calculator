@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a,#3a4452);
+    padding: 10px;
+}
+.container{
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0 3px 15px rgba(113,115,119,0.5);
+    max-width: 400px;
+    width: 100%;
+}
+input{
+    width: 100%;
+    border: none;
+    padding: 20px;
+    margin: 10px 0;
+    background: transparent;
+    box-shadow: 0 3px 15px rgba(84, 84, 84, 0.1);
+    font-size: 2rem;
+    text-align: right;
+    cursor: pointer;
+    color: #fff;
+}
+input::placeholder{
+    color: #fff;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    flex: 1;
+    margin: 8px;
+    border: none;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 1.2rem;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.085);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+button:active{
+    transform: scale(0.9);
+}
+.equal-button{
+    background-color: #fb7c14;
+    color: #fff;
+}
+.operator{
+    color: #6dee0a;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        max-width: 95%;
+        padding: 15px;
+    }
+    input {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    button {
+        font-size: 1rem;
+        margin: 6px;
+    }
+}
+
+@media (max-width: 350px) {
+    input {
+        font-size: 1.2rem;
+    }
+    button {
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+}
