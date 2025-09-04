@@ -67,7 +67,6 @@ button:active{
     color: #6dee0a;
 }
 
-/* 📱 Responsive Design */
 @media (max-width: 500px) {
     .container {
         max-width: 95%;
