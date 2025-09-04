@@ -4,6 +4,7 @@ let string = ""
 let arr = Array.from(buttons)
 arr.forEach(button => {
     button.addEventListener('click',(e)=>{
+            navigator.vibrate(50);
         if (e.target.innerHTML == '='){
             string = eval(string)
             input.value = string
